@@ -6,6 +6,8 @@ AllCops:
     - "spec/**/*"
     - "lib/gilded_rose.rb"
     - "vendor/**/*"
+    - "Rakefile"
+    - "Gemfile"
 
 Layout:
   Metrics/LineLength:
@@ -13,11 +15,6 @@ Layout:
   # We are not going to line up parameters that span more than one line.
   Style/AlignParameters:
     Enabled: false
-
-# We like to use the hash rocket in rake files.
-Style/HashSyntax:
-  Exclude:
-    - "Rakefile"
 
 Style/FrozenStringLiteralComment:
   Enabled: false
